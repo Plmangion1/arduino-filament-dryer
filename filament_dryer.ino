@@ -21,10 +21,10 @@ DallasTemperature heaterSensor(&oneWire);
 DHT tubSensor(TUB_DHT_PIN, DHTTYPE);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-const float HEAT_OFF_TEMP = 40.0;
+const float HEAT_OFF_TEMP = 55.0;
 const float HEAT_HYST     = 10.0;
-const float FAN_ON_TEMP   = 20.0;
-const float FAN_HYST      = 0.3;
+const float FAN_ON_HUM    = 20.0;  // fan ON above this humidity %
+const float FAN_HYST      = 1.0;
 
 bool heaterOn = false;
 bool fanOn = false;
@@ -106,9 +106,10 @@ void loop() {
   }
   digitalWrite(RELAY_HEATER, heaterOn ? HIGH : LOW);
 
-  if (heaterTemp >= FAN_ON_TEMP) {
+  // Fan controlled by tub humidity
+  if (tubHum > FAN_ON_HUM) {
     fanOn = true;
-  } else if (heaterTemp < (FAN_ON_TEMP - FAN_HYST)) {
+  } else if (tubHum <= (FAN_ON_HUM - FAN_HYST)) {
     fanOn = false;
   }
   digitalWrite(RELAY_FAN, fanOn ? HIGH : LOW);

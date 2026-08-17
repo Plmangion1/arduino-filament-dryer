@@ -100,13 +100,10 @@ flowchart LR
 - Heater wired to Relay1's NO screw, fan wired to Relay2's NO screw.
 - IN3/IN4 unused.
 
-## Control logic (current test values — tune before real drying runs)
+## Control logic
 
-- Heater: OFF at 40°C, back ON at 30°C (10°C hysteresis)
-- Fan: ON at 20°C, OFF just below 20°C (small hysteresis to prevent relay
-  chatter)
-- Both driven off the **heater** probe (heatsink temperature), not the tub
-  sensor
+- Heater: OFF at 55°C, back ON at 45°C (10°C hysteresis) — driven off the **heater probe** (heatsink temperature)
+- Fan: ON when tub humidity > 20%, OFF when tub humidity ≤ 19% — driven off the **DHT tub sensor**
 
 ## LCD layout
 
