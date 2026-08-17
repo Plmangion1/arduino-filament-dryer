@@ -4,6 +4,8 @@ An Arduino-controlled 3-tier filament drying box. Heats a tub to a target
 temperature range with a relay-switched 12V cartridge heater, cools the
 heatsink with a 12V fan, and displays live status on an I2C LCD.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/plmangion)
+
 ![Arduino Uno and Relay Module](images/uno_relay.png)
 
 ## Tiers
