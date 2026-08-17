@@ -16,16 +16,16 @@ heatsink with a 12V fan, and displays live status on an I2C LCD.
 
 ## Parts
 
-| Part | Notes |
-|---|---|
-| Arduino Uno | main controller |
-| Keyestudio 4-channel relay module (SRD-12VDC-SL-C) | switches heater + fan |
-| DS18B20 waterproof temp probe ("heater" sensor) | mounted on the heatsink |
-| DHT11/DHT22 temp+humidity sensor ("tub" sensor) | mounted inside the drying tub |
-| 16x2 LCD with I2C backpack (PCF8574T) | status display |
-| 12V 70W cartridge heater (6x20mm) | heats the heatsink |
-| 12V fan (Cooler Master 12025) | cools the heatsink |
-| External 12V power supply | powers heater, fan, and relay coils |
+| Part | Notes | Buy |
+|---|---|---|
+| Arduino Uno | main controller | [Amazon](https://www.amazon.com/s?k=Arduino+Uno+R3&tag=plmangion20-20) |
+| Keyestudio 4-channel relay module (SRD-12VDC-SL-C) | switches heater + fan | [Amazon](https://www.amazon.com/s?k=4+channel+relay+module+5V+Arduino&tag=plmangion20-20) |
+| DS18B20 waterproof temp probe ("heater" sensor) | mounted on the heatsink | [Amazon](https://www.amazon.com/s?k=DS18B20+waterproof+temperature+probe&tag=plmangion20-20) |
+| DHT11/DHT22 temp+humidity sensor ("tub" sensor) | mounted inside the drying tub | [Amazon](https://www.amazon.com/s?k=DHT11+DHT22+temperature+humidity+sensor+module&tag=plmangion20-20) |
+| 16x2 LCD with I2C backpack (PCF8574T) | status display | [Amazon](https://www.amazon.com/s?k=16x2+LCD+I2C+backpack+PCF8574&tag=plmangion20-20) |
+| 12V 70W cartridge heater (6x20mm) | heats the heatsink | [Amazon](https://www.amazon.com/s?k=12V+cartridge+heater+6x20mm&tag=plmangion20-20) |
+| 12V fan (Cooler Master 12025) | cools the heatsink | [Amazon](https://www.amazon.com/s?k=12V+fan+120x25mm+PC+cooling&tag=plmangion20-20) |
+| External 12V power supply | powers heater, fan, and relay coils | [Amazon](https://www.amazon.com/s?k=12V+5A+power+supply+DC+adapter&tag=plmangion20-20) |
 
 ### Component photos
 
