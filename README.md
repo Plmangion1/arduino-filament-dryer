@@ -6,6 +6,8 @@ heatsink with a 12V fan, and displays live status on an I2C LCD.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/plmangion)
 
+📖 [View full build guide on Instructables](https://www.instructables.com/Arduino-Filament-Dryer-Box-With-Temperature-Humidi/)
+
 ![Arduino Uno and Relay Module](images/uno_relay.png)
 
 ## Tiers
