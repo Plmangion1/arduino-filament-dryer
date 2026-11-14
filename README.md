@@ -156,6 +156,8 @@ T:22.0C 45%
 The electronics sleeve, heater catwalk and struts are in [`3d-parts/`](./3d-parts/)
 as OpenSCAD source and STL, with print notes.
 
+Also on Thingiverse: https://www.thingiverse.com/thing:7434905
+
 ## Firmware
 
 See [`filament_dryer.ino`](./filament_dryer.ino).
