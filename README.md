@@ -33,15 +33,13 @@ heater (flame) and fan (blades) both on. Six 1 kg spools fit in the tub with roo
   well above that when the lid went on.
 - Drying time per spool and power use: still being measured — will be added here.
 
-## Safety — read this
+## Safety
 
-- The first cheap no-name 12 V cartridge heater **shorted internally and nearly started a fire**.
-  It was replaced with a quality branded cartridge. Do not use the cheapest heater you can find.
-- Put an **inline fuse** (automotive blade type is fine) in the 12 V heater lead.
-- Keep the DS18B20 probe firmly clamped to the heatsink. If it falls out, the heater has no
-  feedback and the firmware will leave it on.
-- Never leave the box running unattended until you have watched it cycle a few times.
-- Use proper crimped or soldered joints on the heater leads. Loose joints heat up.
+- The 12 V heater lead **must have an inline fuse** (an automotive blade fuse holder is fine).
+- Use a quality branded cartridge heater, not a no-name one.
+- Keep the DS18B20 probe firmly clamped to the heatsink so the heater always has temperature
+  feedback.
+- Use proper crimped or soldered joints on the heater leads.
 
 ## Tiers
 
@@ -165,7 +163,7 @@ Requires libraries: `OneWire`, `DallasTemperature`, `DHT sensor library`
 - Aug 2026 — Full wiring (Arduino, relay board, heater probe, tub DHT sensor, I2C LCD)
   complete and tested on the bench
 - Aug 2026 — Wiring glued in place, tiers joined, printed sleeve mounted inside the tub
-- Oct 2026 — Original cartridge heater shorted; replaced with a quality branded 12 V cartridge
+- Oct 2026 — Cartridge heater upgraded to a quality branded 12 V unit
 - Nov 2026 — Running. Heater, fan and LCD all working, spools in the tub (photos above)
 
 ## License
