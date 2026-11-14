@@ -8,7 +8,40 @@ heatsink with a 12V fan, and displays live status on an I2C LCD.
 
 📖 [View full build guide on Instructables](https://www.instructables.com/Arduino-Filament-Dryer-Box-With-Temperature-Humidi/)
 
-![Arduino Uno and Relay Module](images/uno_relay.png)
+![LCD showing heater 35.1C, tub 26.9C, 22% humidity, heater and fan on](images/lcd_running.jpg)
+
+**It works.** Heater probe 35.1 °C and climbing, tub air 26.9 °C at 22 % humidity,
+heater (flame) and fan (blades) both on. Six 1 kg spools fit in the tub with room to spare.
+
+## Finished build
+
+| Heater + fan on the catwalk above the spools | LCD window in the printed top tier |
+|---|---|
+| ![Heatsink and fan over the spools](images/heater_fan_over_spools.jpg) | ![LCD window](images/lcd_window_enclosure.jpg) |
+
+- The electronics sleeve (Arduino, relay board, LCD) bolts **inside** a clear tub, so the LCD
+  reads through the wall. The DHT sensor sits in the tub air it is drying.
+- The cartridge heater lives in a finned copper/aluminium heatsink hung upside down on a printed
+  "catwalk" arm, with a 120 mm fan blowing through the fins so the whole tub warms evenly.
+- The DS18B20 probe is clamped in the heatsink next to the cartridge, so the Arduino controls
+  the heater on *heatsink* temperature, not air temperature.
+
+## Results so far
+
+- Tub holds 6 x 1 kg spools.
+- Tub air settles around 22 % RH with the heater probe at 35 °C (see photo). Room air was
+  well above that when the lid went on.
+- Drying time per spool and power use: still being measured — will be added here.
+
+## Safety — read this
+
+- The first cheap no-name 12 V cartridge heater **shorted internally and nearly started a fire**.
+  It was replaced with a quality branded cartridge. Do not use the cheapest heater you can find.
+- Put an **inline fuse** (automotive blade type is fine) in the 12 V heater lead.
+- Keep the DS18B20 probe firmly clamped to the heatsink. If it falls out, the heater has no
+  feedback and the firmware will leave it on.
+- Never leave the box running unattended until you have watched it cycle a few times.
+- Use proper crimped or soldered joints on the heater leads. Loose joints heat up.
 
 ## Tiers
 
@@ -129,6 +162,12 @@ Requires libraries: `OneWire`, `DallasTemperature`, `DHT sensor library`
 
 ## Build log
 
-- Full wiring (Arduino, relay board, heater probe, tub DHT sensor, I2C LCD)
-  complete and tested
-- Currently gluing wiring in place and joining Tier 1 to Tier 2
+- Aug 2026 — Full wiring (Arduino, relay board, heater probe, tub DHT sensor, I2C LCD)
+  complete and tested on the bench
+- Aug 2026 — Wiring glued in place, tiers joined, printed sleeve mounted inside the tub
+- Oct 2026 — Original cartridge heater shorted; replaced with a quality branded 12 V cartridge
+- Nov 2026 — Running. Heater, fan and LCD all working, spools in the tub (photos above)
+
+## License
+
+MIT — see [LICENSE](LICENSE). Build one, improve it, share it back.
