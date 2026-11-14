@@ -151,6 +151,11 @@ T:22.0C 45%
 - Fan icon: blade pattern when fan relay is ON, dot when OFF
 - Row 2: tub temperature and humidity from the DHT sensor
 
+## 3D-printed parts
+
+The electronics sleeve, heater catwalk and struts are in [`3d-parts/`](./3d-parts/)
+as OpenSCAD source and STL, with print notes.
+
 ## Firmware
 
 See [`filament_dryer.ino`](./filament_dryer.ino).
